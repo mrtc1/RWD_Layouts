@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #686868;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+}
+.grid-container [class*=col-] {
+  min-height: 1px;
+  padding: 5px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  border-radius: 1px;
+  float: left;
+}
+@media (max-width: 500px) and (orientation: portrait) {
+  .grid-container [class*=col-] {
+    float: none;
+    width: auto;
+  }
+}
+.grid-container .row:before, .grid-container .row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.Cornsilk {
+  background: Cornsilk;
+}
+
+.lightblue {
+  background: lightblue;
+}
+
+.cornflowerBlue {
+  background: cornflowerBlue;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.grid-container p {
+  display: block;
+  height: 20px;
+}
+
+.box {
+  height: 200px;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.nav-toolbar .nav-item {
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+  display: inline-block;
+}
+@media (max-width: 500px) and (orientation: portrait) {
+  .nav-toolbar .nav-item {
+    display: block;
+  }
+}
+.nav-toolbar a {
+  text-decoration: none;
+  color: #686868;
+}
+.nav-toolbar a:hover {
+  color: #525252;
+  letter-spacing: 4px;
+}
+
+#hamMenu {
+  height: 66.66667px;
+  border: 1px solid lightgrey;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.image {
+  background-image: url("../img/cat1.jpg");
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  height: 0;
+  padding-top: 99.8%;
+  width: 100%;
+}
+
+footer > div {
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

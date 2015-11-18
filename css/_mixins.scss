@@ -1,0 +1,23 @@
+//media queries
+@mixin mobile($viewSize){
+  @media (max-width: #{$viewSize}) and (orientation:portrait){
+@content;
+}
+  }
+
+//increasing font size for different headings
+@mixin font($hNumber){
+  $scale :($hMaxPlus1 - $hNumber)*1.5;
+  font-size: $fontSize * $scale;
+line-height: $lineHeight * $scale;
+  margin:$marginSize * $scale 20px;
+  color: lighten($headingColor, 5% * (1.5/$scale));
+}
+
+//border radius for different browsers
+@mixin border-radius($rad) {
+  -webkit-border-radius: $rad;
+  -moz-border-radius: $rad;
+  -ms-border-radius: $rad;
+  border-radius: $rad;
+}

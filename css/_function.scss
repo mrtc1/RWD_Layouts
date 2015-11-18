@@ -1,0 +1,3 @@
+@function gridWidth($colNum){
+  @return $basicGrid*$colNum;
+}
