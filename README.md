@@ -1,3 +1,3 @@
 # RWD_Layouts
-Basic RWD custom elements - grid, hamburger menu written with Sass
+My version of basic RWD layout elements - grid, hamburger menu written with Sass
 
